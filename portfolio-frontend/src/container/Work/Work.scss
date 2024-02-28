@@ -140,12 +140,13 @@
     line-height: 1.5;
   }
 
+  
   .app__work-tag {
     position: absolute;
 
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--primary2-color);
     top: -25px;
   }
 }

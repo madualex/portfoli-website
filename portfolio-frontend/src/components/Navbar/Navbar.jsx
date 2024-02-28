@@ -9,7 +9,6 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
-  const [active, setActive] = useState('')
 
   return (
     <nav className='app__navbar'>
@@ -22,7 +21,7 @@ const Navbar = () => {
                 </a> */}
       </div>
       <ul className='app__navbar-links'>
-        {['home', 'about', 'work', 'skills', 'testimonial', 'contact'].map((item) => (
+        {['home', 'about', 'work', 'skills', 'treviews', 'contact'].map((item) => (
           <li className='app__flex p-text' key={`link-${item}`}>
             <div></div>
             <a href={`#${item}`}>{item}</a>
