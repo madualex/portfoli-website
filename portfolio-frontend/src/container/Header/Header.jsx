@@ -38,11 +38,11 @@ const Header = () => {
           <TextEffect/>
           <p className='p-text' style={{ marginTop: '20px', color: '#fff' }}>I am not just a developer, I am a catalyst for positive change. By hiring me, you will not only finish projects on time, you will also have created digital products that users love.</p>
           <div className='header__cta'>
-            <a href='' className='cv__link'>
+            <a href={CV} download className='cv__link'>
               <p className='p-text'>Download CV</p>
               <HiArrowDownTray className='cv__icon' />
             </a>
-            <a href={CV} download className='cv__link'>
+            <a href='https://wa.me/+2348136938648' target='_blank' className='cv__link'>
               <p className='p-text'>Hire me</p>
               <FaWhatsapp className='cv__icon' />
             </a>
