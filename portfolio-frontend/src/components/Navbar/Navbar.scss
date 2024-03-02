@@ -44,14 +44,13 @@
   // The above is exactly the advantage that scss brings over css. In normal css, one would have had to write that commented line of code above so as to target the img tag for styling but with scss, it can be targetted directly like we have in the code below as though the img is like any other css property only that it would now have its own block of styling and even further styling like the responsiveness can be applied directly on it and so on. So, scss helps to reduce the lines of code for styling much more than one would normally have using vanilla css.
 
   img {
-      width: 200px;
-      height: 100px;
+    width: 200px;
+    height: 100px;
 
-      @media screen and (min-width: 2000px) {
-          width: 180px;
-          height: 40px;
-      }
-
+    @media screen and (min-width: 2000px) {
+      width: 180px;
+      height: 40px;
+    }
   }
 }
 
@@ -140,12 +139,21 @@
     align-items: flex-end;
     flex-direction: column;
 
-    background: url("../../assets/bgWhite.png");
-    background-color: var(--white-color);
+    // background: url("../../assets/bgWhite.png");
+    // background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
 
-    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    // background: rgba(255, 255, 255, 0.25);
+    background: var(--primary1-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(
+      4px
+    );
+    // border: 1px solid rgba(255, 189, 89, 1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    // box-shadow: 0 0 20px rgba(228, 220, 220, 0.15);
 
     svg {
       width: 35px;
@@ -170,7 +178,8 @@
         margin: 1rem;
 
         a {
-          color: var(--gray-color);
+          color: var(--secondary-color);
+          // color: var(--gray-color);
           text-decoration: none;
           font-size: 1rem;
           text-transform: uppercase;
@@ -179,7 +188,7 @@
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: var(--secondary-color);
+            color: var(--white-color);
           }
         }
       }

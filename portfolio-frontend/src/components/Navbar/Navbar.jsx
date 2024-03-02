@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
-// import { images } from '../../constants';
-// import CV from '../../assets/resume.pdf'
 import './Navbar.scss';
 
 
@@ -16,9 +14,6 @@ const Navbar = () => {
         <a href='/' className='logo-text'>
           AL<span style={{color: "#fff"}}>EX</span>
         </a>
-        {/* <a href="#" className='p-text app__navbar-links'>
-                    <img src={images.logo} alt="logo" />
-                </a> */}
       </div>
       <ul className='app__navbar-links'>
         {['home', 'about', 'work', 'skills', 'reviews', 'contact'].map((item) => (
@@ -40,7 +35,7 @@ const Navbar = () => {
             >
               <HiX onClick={() => setToggle(false)} />
               <ul>
-                {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+                {['home', 'about', 'work', 'skills', 'reviews', 'contact'].map((item) => (
                   <li key={item}>
                     <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                   </li>

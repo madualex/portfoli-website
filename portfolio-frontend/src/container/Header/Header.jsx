@@ -42,7 +42,7 @@ const Header = () => {
               <p className='p-text'>Download CV</p>
               <HiArrowDownTray className='cv__icon' />
             </a>
-            <a href='https://wa.me/+2348136938648' target='_blank' className='cv__link'>
+            <a href='https://wa.me/+2348136938648' target='_blank' rel='noreferrer' className='cv__link'>
               <p className='p-text'>Hire me</p>
               <FaWhatsapp className='cv__icon' />
             </a>
