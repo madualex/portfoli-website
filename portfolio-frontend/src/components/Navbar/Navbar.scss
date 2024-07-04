@@ -1,11 +1,11 @@
 .app__navbar {
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 1rem 2rem;
+  // padding: 1rem 10rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(
@@ -18,10 +18,24 @@
 }
 
 .app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  // display: flex;
+  // flex: 0.65;
+  // justify-content: center;
   // align-items: center;
+
+  // @media screen and (max-width: 900px) {
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   align-items: flex-start;
+  // }
+
+  margin-left: 12%;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    margin-left: 0%;
+    // padding-left: 0;
+  }
 
   a {
     text-transform: uppercase;
@@ -35,9 +49,10 @@
     //   color: var(--gray-color);
     // }
 
-    @media screen and (max-width: 900px) {
-      display: flex;
-    }
+    // @media screen and (max-width: 900px) {
+    //   display: flex;
+    //   padding-left: 0;
+    // }
   }
 
   //.app__navbar-logo img {}
@@ -56,7 +71,7 @@
 
 .app__navbar-links {
   display: flex;
-  flex: 1; // expand/grow to fill up the remaining space
+  flex: 0.65; // expand/grow to fill up the remaining space
   justify-content: center;
   align-items: center;
 

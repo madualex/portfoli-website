@@ -36,7 +36,7 @@ const Header = () => {
         </div>
         <div className='effect__div'>
           <TextEffect/>
-          <p className='p-text' style={{ marginTop: '20px', color: '#fff' }}>I am not just a developer, I am a catalyst for positive change. By hiring me, you will not only finish projects on time, you will also have created digital products that users love.</p>
+          <p className='p-text' style={{ marginTop: '20px', color: '#fff', width: "95%"}}>I am not just a developer, I am a catalyst for positive change. By hiring me, you will not only finish projects on time, you will also have created digital products that users love.</p>
           <div className='header__cta'>
             <a href={CV} download className='cv__link'>
               <p className='p-text'>Download CV</p>
